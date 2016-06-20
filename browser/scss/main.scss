@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #fdfdfd;
+    min-height: 100%;
+    .title {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@mixin clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+#main {
+    padding-top: 60px;
+    margin: 0 auto;
+    height: 450px;
+}
+
+@import 'directives/main';
+@import 'home/main';
+@import 'about/main';
+@import 'tutorial/main';
+@import 'generator/main';
