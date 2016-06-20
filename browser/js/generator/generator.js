@@ -44,9 +44,10 @@ app.factory('StoryFactory', function($http) {
                 // console.log("creating lines")
                 var lines = [];
                 var count = 0;
+                var quotesLen = quotes.length
 
                 while (count < 50) {
-                    var index = Math.floor(Math.random() * 6340)
+                    var index = Math.floor(Math.random() * quotesLen)
                     if (lines.indexOf(quotes[index]) < 0) {
                         lines.push(quotes[index])
                         count++
@@ -87,11 +88,13 @@ app.controller('StoryCtrl', function($scope, StoryFactory) {
 
     StoryFactory.narratorQuotes()
         .then(function(narration) {
-            var introSceneOneIndex = Math.floor(Math.random() * 624)
-            var introSceneTwoIndex = Math.floor(Math.random() * 624)
-            var introSceneThreeIndex = Math.floor(Math.random() * 624)
-            var introSceneFourIndex = Math.floor(Math.random() * 624)
-            var outroScriptIndex = Math.floor(Math.random() * 624)
+            var narrationLen = narration.length
+
+            var introSceneOneIndex = Math.floor(Math.random() * narrationLen)
+            var introSceneTwoIndex = Math.floor(Math.random() * narrationLen)
+            var introSceneThreeIndex = Math.floor(Math.random() * narrationLen)
+            var introSceneFourIndex = Math.floor(Math.random() * narrationLen)
+            var outroScriptIndex = Math.floor(Math.random() * narrationLen)
 
             var introSceneOne = narration[introSceneOneIndex];
             var introSceneTwo = narration[introSceneTwoIndex];

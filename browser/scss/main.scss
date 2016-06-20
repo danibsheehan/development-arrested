@@ -25,6 +25,16 @@ body {
     height: 450px;
 }
 
+.images {
+    width: 80%;
+    margin: 0 auto;
+    img {
+        clear: both;
+        margin: 0 5px;
+        border: 1px solid black;
+    }
+}
+
 @import 'directives/main';
 @import 'home/main';
 @import 'about/main';
