@@ -2,7 +2,10 @@
     width: 90%;
     margin: 0 auto;
     text-align: center;
+}
 
+.character {
+    font-weight: bold;
 }
 
 .scene-dialog {
@@ -17,12 +20,27 @@
 }
 
 hr {
-    width: 90%;
-    border: 2px solid #ED6C1C;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(237, 108, 28, 1), rgba(0, 0, 0, 0));
 }
 
 h4,
 h5 {
     text-align: center;
     text-decoration: underline;
+    font-weight: bold;
+}
+
+.re-direct {
+    margin-bottom: 3%;
+    text-align: center;
+    .btn {
+        background-color: #ED6C1C;
+        border-radius: 2px;
+        margin: 0 1%;
+        a {
+            color: white;
+        }
+    }
 }

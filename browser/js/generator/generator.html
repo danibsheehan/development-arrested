@@ -1,66 +1,78 @@
+<div class="re-direct">
+    <div class="btn return-home">
+        <a href="/">
+            <em>I've made a huge mistake,</em> Go Back
+        </a>
+    </div>
+    <div class="btn refresh">
+        <a href="#">
+            <em>You're my third least favorite child,</em> Try Again
+        </a>
+    </div>
+</div>
 <div id="script">
-        <h4>Act One</h4>
-        <div class="scene">
-            <h5>Scene One</h5>
-            <div class="narration">
-                <p class="character">{{ introSceneOne.character | uppercase }}</p>
-                <p class="dialog">{{ introSceneOne.quote }}</p>
-            </div>
-            <div class="scene-dialog" ng-repeat="quote in sceneOne">
-                <div class="scene-line">
-                    <p class="character">{{ quote.character | uppercase }}</p>
-                    <p class="dialog">{{ quote.quote }}</p>
-                </div>
-            </div>
+    <h4>Act One</h4>
+    <div class="scene">
+        <h5>Scene One</h5>
+        <div class="narration">
+            <p class="character">{{ introSceneOne.character | uppercase }}</p>
+            <p class="dialog">{{ introSceneOne.quote }}</p>
         </div>
-        <hr>
-        <div class="scene">
-            <h5>Scene Two</h5>
-            <div class="narration">
-                <p class="character">{{ introSceneTwo.character }}</p>
-                <p class="dialog">{{ introSceneTwo.quote }}</p>
-            </div>
-            <div class="scene-dialog" ng-repeat="quote in sceneTwo">
-                <div class="scene-line">
-                    <p class="character">{{ quote.character | uppercase }}</p>
-                    <p class="dialog">{{ quote.quote }}</p>
-                </div>
-            </div>
-        </div>
-        <hr>
-    </div>
-    <div>
-        <h4>Act Two</h4>
-        <div class="scene">
-            <h5>Scene Three</h5>
-            <div class="narration">
-                <p class="character">{{ introSceneThree.character }}</p>
-                <p class="dialog">{{ introSceneThree.quote }}</p>
-            </div>
-            <div class="scene-dialog" ng-repeat="quote in sceneThree">
-                <div class="scene-line">
-                    <p class="character">{{ quote.character | uppercase }}</p>
-                    <p class="dialog">{{ quote.quote }}</p>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <div class="scene">
-            <h5>Scene Four</h5>
-            <div class="narration">
-                <p class="character">{{ introSceneFour.character | uppercase }}</p>
-                <p class="dialog">{{ introSceneFour.quote }}</p>
-            </div>
-            <div class="scene-dialog" ng-repeat="quote in sceneFour">
-                <div class="scene-line">
-                    <p class="character">{{ quote.character | uppercase }}</p>
-                    <p class="dialog">{{ quote.quote }}</p>
-                </div>
-            </div>
-            <div class="narration">
-                <p class="character">{{ outroScript.character | uppercase }}</p>
-                <p class="dialog">{{ outroScript.quote }}</p>
+        <div class="scene-dialog" ng-repeat="quote in sceneOne">
+            <div class="scene-line">
+                <p class="character">{{ quote.character | uppercase }}</p>
+                <p class="dialog">{{ quote.quote }}</p>
             </div>
         </div>
     </div>
+    <hr>
+    <div class="scene">
+        <h5>Scene Two</h5>
+        <div class="narration">
+            <p class="character">{{ introSceneTwo.character }}</p>
+            <p class="dialog">{{ introSceneTwo.quote }}</p>
+        </div>
+        <div class="scene-dialog" ng-repeat="quote in sceneTwo">
+            <div class="scene-line">
+                <p class="character">{{ quote.character | uppercase }}</p>
+                <p class="dialog">{{ quote.quote }}</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+</div>
+<div>
+    <h4>Act Two</h4>
+    <div class="scene">
+        <h5>Scene Three</h5>
+        <div class="narration">
+            <p class="character">{{ introSceneThree.character }}</p>
+            <p class="dialog">{{ introSceneThree.quote }}</p>
+        </div>
+        <div class="scene-dialog" ng-repeat="quote in sceneThree">
+            <div class="scene-line">
+                <p class="character">{{ quote.character | uppercase }}</p>
+                <p class="dialog">{{ quote.quote }}</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="scene">
+        <h5>Scene Four</h5>
+        <div class="narration">
+            <p class="character">{{ introSceneFour.character | uppercase }}</p>
+            <p class="dialog">{{ introSceneFour.quote }}</p>
+        </div>
+        <div class="scene-dialog" ng-repeat="quote in sceneFour">
+            <div class="scene-line">
+                <p class="character">{{ quote.character | uppercase }}</p>
+                <p class="dialog">{{ quote.quote }}</p>
+            </div>
+        </div>
+        <div class="narration">
+            <p class="character">{{ outroScript.character | uppercase }}</p>
+            <p class="dialog">{{ outroScript.quote }}</p>
+        </div>
+    </div>
+</div>
 </div>
