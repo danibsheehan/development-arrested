@@ -26,24 +26,6 @@ var Promise = require('sequelize').Promise;
 
 var files = ['./scripts/episode1.txt', './scripts/episode2.txt', './scripts/episode3.txt', './scripts/episode4.txt', './scripts/episode5.txt', './scripts/episode6.txt', './scripts/episode7.txt', './scripts/episode8.txt', './scripts/episode9.txt', './scripts/episode10.txt', './scripts/episode11.txt', './scripts/episode12.txt', './scripts/episode14.txt', './scripts/episode15.txt', './scripts/episode16.txt', './scripts/episode17.txt', './scripts/episode18.txt', './scripts/episode19.txt', './scripts/episode20.txt', './scripts/episode21.txt', './scripts/episode22.txt']
 
-    // var seedUsers = function() {
-
-//     var users = [{
-//         email: 'testing@fsa.com',
-//         password: 'password'
-//     }, {
-//         email: 'obama@gmail.com',
-//         password: 'potus'
-//     }];
-
-//     var creatingUsers = users.map(function(userObj) {
-//         return User.create(userObj);
-//     });
-
-//     return Promise.all(creatingUsers);
-
-// };
-
 var seedQuotes = function() {
 
     var readfiles = [];
@@ -83,9 +65,6 @@ var seedQuotes = function() {
 };
 
 db.sync({ force: true })
-    // .then(function() {
-    //     return seedUsers();
-    // })
     .then(function() {
         return seedQuotes();
     })
