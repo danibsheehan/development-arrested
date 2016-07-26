@@ -5,7 +5,7 @@ var router = require('express').Router();
 
 module.exports = router;
 
-router.get('/', function(req, res, next) {
+router.get('/home', function(req, res, next) {
 
     Quote.findAll({})
         .then(function(quotes) {
