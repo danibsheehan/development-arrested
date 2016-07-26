@@ -1,5 +1,5 @@
 'use strict';
-var db = require('../../db/_db');
+var db = require('../../../db/_db');
 var Quote = db.model('quote');
 var router = require('express').Router();
 

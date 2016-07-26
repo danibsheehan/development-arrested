@@ -4,7 +4,7 @@ module.exports = router;
 
 // router.use('/members', require('./members'));
 
-router.use('/quotes', require('./script'))
+router.use('/quotes', require('./quotes'))
 
 // Make sure this is after all of
 // the registered routes!
