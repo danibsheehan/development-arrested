@@ -1,11 +1,12 @@
 'use strict';
 
 var Sequelize = require('sequelize');
+var db = require('../_db');
 
-module.exports = function (db) {
+module.exports = function(db) {
 
-  db.define('quote', {
-  	character: Sequelize.STRING(),
-    quote: Sequelize.TEXT()     
-  });
+    return db.define('quote', {
+        character: Sequelize.STRING(),
+        quote: Sequelize.TEXT()
+    });
 };
