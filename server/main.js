@@ -23,4 +23,5 @@ var startServer = function () {
 
 db.sync().then(createApplication).then(startServer).catch(function (err) {
     console.error(chalk.red(err.stack));
+    process.kill(1);
 });
