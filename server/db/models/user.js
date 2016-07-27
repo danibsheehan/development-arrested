@@ -10,7 +10,6 @@ module.exports = function(db) {
     return db.define('user', {
         name: {
             type: Sequelize.STRING,
-            defaultValue: 'Dreamer'
         },
         isAdmin: {
             type: Sequelize.BOOLEAN,
