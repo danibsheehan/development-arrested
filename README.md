@@ -1,4 +1,5 @@
 # development-arrested
+![Image of Home Page](https://github.com/danibsheehan/development-arrested/blob/master/development-arrested-home.png)
 
 Development Arrested is a randomized script generator, allowing an end-user to create their very own 30-minute episode of Arrested Development. As of right now, the first season of AD is used in generating a new screenplay, however more seasons will shortly be added.
 
