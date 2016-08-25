@@ -12,7 +12,6 @@ app.factory('StoryFactory', function($http) {
     StoryFactory.getAllQuotes = function() {
         return $http.get('/api/quotes')
             .then(function(response) {
-                // console.log(quotes.data)
                 return response.data
             })
     }
@@ -30,7 +29,6 @@ app.factory('StoryFactory', function($http) {
                         narration.push(quoteObj)
                     }
                 })
-                console.log(narration.length)
                 return narration
             })
     }

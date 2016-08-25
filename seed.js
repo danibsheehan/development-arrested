@@ -24,7 +24,8 @@ var Quote = db.model('quote');
 var fs = require('fs');
 var Promise = require('sequelize').Promise;
 
-var files = ['./scripts/episode1.txt', './scripts/episode2.txt', './scripts/episode3.txt', './scripts/episode4.txt', './scripts/episode5.txt', './scripts/episode6.txt', './scripts/episode7.txt', './scripts/episode8.txt', './scripts/episode9.txt', './scripts/episode10.txt', './scripts/episode11.txt', './scripts/episode12.txt', './scripts/episode14.txt', './scripts/episode15.txt', './scripts/episode16.txt', './scripts/episode17.txt', './scripts/episode18.txt', './scripts/episode19.txt', './scripts/episode20.txt', './scripts/episode21.txt', './scripts/episode22.txt']
+var files = ['./scripts/episode1.txt']
+// ['./scripts/episode2.txt', './scripts/episode3.txt', './scripts/episode4.txt', './scripts/episode5.txt', './scripts/episode6.txt', './scripts/episode7.txt', './scripts/episode8.txt', './scripts/episode9.txt', './scripts/episode10.txt', './scripts/episode11.txt', './scripts/episode12.txt', './scripts/episode14.txt', './scripts/episode15.txt', './scripts/episode16.txt', './scripts/episode17.txt', './scripts/episode18.txt', './scripts/episode19.txt', './scripts/episode20.txt', './scripts/episode21.txt', './scripts/episode22.txt']
 
 var seedQuotes = function() {
 
